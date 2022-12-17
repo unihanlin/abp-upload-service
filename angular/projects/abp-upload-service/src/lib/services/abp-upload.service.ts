@@ -1,18 +1,22 @@
 import { Injectable } from '@angular/core';
-import { RestService } from '@abp/ng.core';
+import { Rest, RestService } from '@abp/ng.core';
+import { FormRequest } from '../models/form-request';
+import { fieldsToFormData } from '../utils/utils';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AbpUploadService {
-  apiName = 'AbpUploadService';
-
   constructor(private restService: RestService) {}
 
-  sample() {
-    return this.restService.request<void, any>(
-      { method: 'GET', url: '/api/AbpUploadService/sample' },
-      { apiName: this.apiName }
-    );
-  }
+  uploadAsync = <T = any>(request: FormRequest<any>, config?: Rest.Config, api?: string) => {
+    const formData = fieldsToFormData(request.fields);
+    request = {
+      ...request,
+      body: formData,
+    };
+    console.log('request', request);
+
+    return this.restService.request<any, T>(request, config, api);
+  };
 }

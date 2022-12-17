@@ -25,4 +25,9 @@ public class SampleAppService : AbpUploadServiceAppService, ISampleAppService
             }
         );
     }
+
+    public Task<bool> UploadAsync(UploadDto input)
+    {
+        return Task.FromResult(true);
+    }
 }

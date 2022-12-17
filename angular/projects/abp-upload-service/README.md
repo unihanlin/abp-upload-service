@@ -1,24 +1,33 @@
 # AbpUploadService
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.4.
+An upload service base on ABP for angular.
 
-## Code scaffolding
+## Install
 
-Run `ng generate component component-name --project abp-upload-service` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project abp-upload-service`.
-> Note: Don't forget to add `--project abp-upload-service` or else it will be added to the default project in your `angular.json` file. 
+```
+npm install @unihanlin/abp-upload-service
+```
 
-## Build
+## Usage
 
-Run `ng build abp-upload-service` to build the project. The build artifacts will be stored in the `dist/` directory.
+```typescript
+import { AbpUploadService } from '@unihanlin/abp-upload-service';
 
-## Publishing
+constructor(
+    private uploadService: AbpUploadService
+){
+}
 
-After building your library with `ng build abp-upload-service`, go to the dist folder `cd dist/abp-upload-service` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test abp-upload-service` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+submitForm() {
+    this.uploadService
+      .uploadAsync<boolean>(
+        {
+          method: 'POST',
+          url: '/api/AbpUploadService/sample/upload',
+          fields: this.form,
+        },
+        { apiName: 'AbpUploadService' }
+      )
+      .subscribe(result => (console.log(result)));
+  }
+```
