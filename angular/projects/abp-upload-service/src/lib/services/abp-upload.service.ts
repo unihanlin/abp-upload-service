@@ -4,7 +4,7 @@ import { RestService } from '@abp/ng.core';
 @Injectable({
   providedIn: 'root',
 })
-export class AbpUploadServiceService {
+export class AbpUploadService {
   apiName = 'AbpUploadService';
 
   constructor(private restService: RestService) {}
