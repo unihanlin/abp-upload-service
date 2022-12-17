@@ -1,0 +1,7 @@
+{
+  "culture": "tr",
+  "texts": {
+    "SamplePageMessage": "AbpUploadService modulünden örnek bir sayfa",
+    "Menu:AbpUploadService": "Proje Adı"
+  }
+}

@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>Unihanlin.AbpUploadService</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.2.0" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="6.0.0" />
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore.Sqlite" Version="6.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Unihanlin.AbpUploadService.EntityFrameworkCore\Unihanlin.AbpUploadService.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\Unihanlin.AbpUploadService.TestBase\Unihanlin.AbpUploadService.TestBase.csproj" />
+  </ItemGroup>
+
+</Project>
