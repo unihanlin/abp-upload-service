@@ -27,7 +27,6 @@ export class HomeComponent {
   }
 
   submitForm() {
-    console.log('form', this.form);
     this.uploadService
       .uploadAsync<boolean>(
         {

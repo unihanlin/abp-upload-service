@@ -15,7 +15,6 @@ export class AbpUploadService {
       ...request,
       body: formData,
     };
-    console.log('request', request);
 
     return this.restService.request<any, T>(request, config, api);
   };
