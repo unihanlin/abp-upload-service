@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Unihanlin.AbpUploadService.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore;
@@ -12,9 +13,11 @@ using Volo.Abp.EntityFrameworkCore;
 namespace Unihanlin.AbpUploadService.Migrations
 {
     [DbContext(typeof(AuthServerHostMigrationsDbContext))]
-    partial class AuthServerHostMigrationsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231017075637_Upgrade_To_Abp740")]
+    partial class Upgrade_To_Abp740
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
