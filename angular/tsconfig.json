@@ -2,7 +2,7 @@
   "extends": "./tsconfig.prod.json",
   "compilerOptions": {
     "paths": {
-      "@unihanlin/abp-upload-service": ["projects/abp-upload-service/src/public-api.ts"],
+      "@one-dispatch/abp-upload-service": ["projects/abp-upload-service/src/public-api.ts"],
       "@proxy": ["projects/abp-upload-service/src/lib/proxy/index.ts"],
       "@proxy/*": ["projects/abp-upload-service/src/lib/proxy/*"]
     }

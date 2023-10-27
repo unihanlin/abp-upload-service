@@ -1,21 +1,19 @@
 {
-  "generated": [
-    "abpUploadService"
-  ],
+  "generated": ["abpUploadService"],
   "modules": {
     "abpUploadService": {
       "rootPath": "abpUploadService",
       "remoteServiceName": "AbpUploadService",
       "controllers": {
-        "Unihanlin.AbpUploadService.Samples.SampleController": {
+        "one-dispatch.AbpUploadService.Samples.SampleController": {
           "controllerName": "Sample",
           "controllerGroupName": "Sample",
           "isRemoteService": true,
           "apiVersion": null,
-          "type": "Unihanlin.AbpUploadService.Samples.SampleController",
+          "type": "one-dispatch.AbpUploadService.Samples.SampleController",
           "interfaces": [
             {
-              "type": "Unihanlin.AbpUploadService.Samples.ISampleAppService"
+              "type": "one-dispatch.AbpUploadService.Samples.ISampleAppService"
             }
           ],
           "actions": {
@@ -28,11 +26,11 @@
               "parametersOnMethod": [],
               "parameters": [],
               "returnValue": {
-                "type": "Unihanlin.AbpUploadService.Samples.SampleDto",
-                "typeSimple": "Unihanlin.AbpUploadService.Samples.SampleDto"
+                "type": "one-dispatch.AbpUploadService.Samples.SampleDto",
+                "typeSimple": "one-dispatch.AbpUploadService.Samples.SampleDto"
               },
               "allowAnonymous": null,
-              "implementFrom": "Unihanlin.AbpUploadService.Samples.ISampleAppService"
+              "implementFrom": "one-dispatch.AbpUploadService.Samples.ISampleAppService"
             },
             "GetAuthorizedAsync": {
               "uniqueName": "GetAuthorizedAsync",
@@ -43,11 +41,11 @@
               "parametersOnMethod": [],
               "parameters": [],
               "returnValue": {
-                "type": "Unihanlin.AbpUploadService.Samples.SampleDto",
-                "typeSimple": "Unihanlin.AbpUploadService.Samples.SampleDto"
+                "type": "one-dispatch.AbpUploadService.Samples.SampleDto",
+                "typeSimple": "one-dispatch.AbpUploadService.Samples.SampleDto"
               },
               "allowAnonymous": false,
-              "implementFrom": "Unihanlin.AbpUploadService.Samples.ISampleAppService"
+              "implementFrom": "one-dispatch.AbpUploadService.Samples.ISampleAppService"
             },
             "UploadAsyncByInput": {
               "uniqueName": "UploadAsyncByInput",
@@ -58,9 +56,9 @@
               "parametersOnMethod": [
                 {
                   "name": "input",
-                  "typeAsString": "Unihanlin.AbpUploadService.UploadDto, Unihanlin.AbpUploadService.Application.Contracts",
-                  "type": "Unihanlin.AbpUploadService.UploadDto",
-                  "typeSimple": "Unihanlin.AbpUploadService.UploadDto",
+                  "typeAsString": "one-dispatch.AbpUploadService.UploadDto, one-dispatch.AbpUploadService.Application.Contracts",
+                  "type": "one-dispatch.AbpUploadService.UploadDto",
+                  "typeSimple": "one-dispatch.AbpUploadService.UploadDto",
                   "isOptional": false,
                   "defaultValue": null
                 }
@@ -120,7 +118,7 @@
                 "typeSimple": "boolean"
               },
               "allowAnonymous": null,
-              "implementFrom": "Unihanlin.AbpUploadService.Samples.ISampleAppService"
+              "implementFrom": "one-dispatch.AbpUploadService.Samples.ISampleAppService"
             }
           }
         }
@@ -298,7 +296,7 @@
     }
   },
   "types": {
-    "Unihanlin.AbpUploadService.Samples.SampleDto": {
+    "one-dispatch.AbpUploadService.Samples.SampleDto": {
       "baseType": null,
       "isEnum": false,
       "enumNames": null,
@@ -319,7 +317,7 @@
         }
       ]
     },
-    "Unihanlin.AbpUploadService.UploadDto": {
+    "one-dispatch.AbpUploadService.UploadDto": {
       "baseType": null,
       "isEnum": false,
       "enumNames": null,
@@ -992,9 +990,7 @@
       "isEnum": false,
       "enumNames": null,
       "enumValues": null,
-      "genericArguments": [
-        "T"
-      ],
+      "genericArguments": ["T"],
       "properties": [
         {
           "name": "Name",

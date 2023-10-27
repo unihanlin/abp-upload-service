@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { AbpUploadService } from '@unihanlin/abp-upload-service';
+import { AbpUploadService } from '@one-dispatch/abp-upload-service';
 
 @Component({
   selector: 'app-home',

@@ -5,13 +5,13 @@ An upload service base on ABP for angular.
 ## Install
 
 ```
-npm install @unihanlin/abp-upload-service
+npm install @one-dispatch/abp-upload-service
 ```
 
 ## Usage
 
 ```typescript
-import { AbpUploadService } from '@unihanlin/abp-upload-service';
+import { AbpUploadService } from '@one-dispatch/abp-upload-service';
 
 constructor(
     private uploadService: AbpUploadService

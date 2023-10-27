@@ -8,7 +8,7 @@ const oAuthConfig = {
   clientId: 'AbpUploadService_App',
   responseType: 'code',
   scope: 'offline_access AbpUploadService',
-  requireHttps: true
+  requireHttps: true,
 };
 
 export const environment = {
@@ -22,7 +22,7 @@ export const environment = {
   apis: {
     default: {
       url: 'https://localhost:44398',
-      rootNamespace: 'Unihanlin.AbpUploadService',
+      rootNamespace: 'one-dispatch.AbpUploadService',
     },
     AbpAccountPublic: {
       url: oAuthConfig.issuer,
@@ -30,7 +30,7 @@ export const environment = {
     },
     AbpUploadService: {
       url: 'https://localhost:44329',
-      rootNamespace: 'Unihanlin.AbpUploadService',
+      rootNamespace: 'one-dispatch.AbpUploadService',
     },
   },
 } as Environment;

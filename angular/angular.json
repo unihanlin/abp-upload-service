@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "@unihanlin/abp-upload-service": {
+    "@one-dispatch/abp-upload-service": {
       "projectType": "library",
       "root": "projects/abp-upload-service",
       "sourceRoot": "projects/abp-upload-service/src",
